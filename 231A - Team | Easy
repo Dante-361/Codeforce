@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int i, n, impl = 0;
+    cin >> n;
+
+    for ( i = 0; i < n; i++) {
+        int p1, p2, p3;
+        cin >>  p1 >> p2 >> p3;
+
+        if (p1 + p2 + p3 >= 2) {
+            impl ++;
+        }
+
+    }
+
+    cout << impl << endl;
+    return 0;
+
+}
