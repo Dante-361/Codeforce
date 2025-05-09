@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n, X;
+    string oper;
+    cin >> n;
+    X = 0;
+
+    while (n--) {
+        cin >> oper;
+        if (oper.find("++") != string::npos){
+            X++;
+        }  else if (oper.find("--") != string::npos) {
+            X--;
+        }
+    }
+    cout << X << endl;
+    return 0;
+
+}
