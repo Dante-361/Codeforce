@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int elm, x, y, i, j;
+
+    for (i = 1; i <= 5; i++) {
+        for (j = 1; j <= 5; j++) {
+            cin >> elm;
+            if (elm == 1) {
+                x = j;
+                y = i;  
+            }
+        }
+    }
+
+    int move = abs(x-3) + abs(y-3);
+    cout << move << endl;
+
+    return 0;
+} 
